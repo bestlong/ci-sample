@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm i -g yarn'
+        sh 'rm package-lock.json'
         sh 'npm install'
       }
     }
